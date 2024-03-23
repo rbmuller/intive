@@ -18,6 +18,8 @@ def GetCleanData(spark: SparkSession, sales_data_file_path: str) -> DataFrame:
     # load df
     df = spark.read.option("header", "true").csv(sales_data_file_path)
     # Clean data following rules by column type
+    # IF a Date is Null it will be assigned to the last day from the previous month.
+    # In a real environment we could implement formatting rules by column type or by Business Domain.
     df_cleaned = (
         df.withColumn(
             "store_name",
