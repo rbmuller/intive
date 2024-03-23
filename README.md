@@ -16,7 +16,7 @@ To ingest a set of data for analizying sales data from stores and calculate aggr
 
 ### How to get started
 
-If data directory is empty, you will need to generate some fake data to be analyzed, by tyiping:
+If data directory is empty, you will need to generate some fake data to be analyzed, by typing:
 
 ```bash
 python ./helpers/gen_samples.py
@@ -24,9 +24,9 @@ python ./helpers/gen_samples.py
 
 As soon as you have data, let's start the API. The main file is responsible to:
 
-a. Start the spark session
-b. Load the .csv raw data you just generated into a Spark DataFrame and performe some data cleaning.
-c. Serve the API to consume the clean data performing some aggregations.
+1. Start the spark session
+2. Load the .csv raw data you just generated into a Spark DataFrame and performe some data cleaning.
+3. Serve the API to consume the clean data performing some aggregations.
 
 If you want to perform analysis by yourself, there is a [Jupyter Notebook](./data-analyzer.ipynb) for that purpose.
 
