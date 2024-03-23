@@ -1,4 +1,4 @@
-# Intive challlenge
+# Intive Challenge
 
 This project consists of analyzing sales data from a chain of stores, it is based in Spark for distributed processing.
 
